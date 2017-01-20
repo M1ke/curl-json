@@ -3,7 +3,7 @@ namespace Curl;
 
 class Json extends Curl {
 
-	public function post($url, $data = []){
+	public function post($url, $data = array()){
 		$data_string=json_encode($data);
 
 		// These are required for this method
